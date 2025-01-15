@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Wix+Madefor+Text:wght@500&display=swap');
+
+body {
+    font-family: "Oswald", serif;
+    margin: 0px;
+    font-size: 18px;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    background-color: #fca311;
+    margin: 0;
+    padding: 20px;
+}
+
+/*Navigation Bar*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #14213d;
+    padding: 20px;
+    font-size: 21px;
+}
+
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/*Internal Cards Design*/
+.card {
+    border: 1px #e5e5e5 solid;
+    margin: 15px;
+}
+
+.card h2 {
+    margin: 0;
+    background-color: #fca311;
+    text-align: center;
+    padding: 10px;
+}
+
+.card div {
+    display: flex;
+    gap: 1rem;
+}
+
+/*Body Design*/
+.internal-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 20px;
+}
