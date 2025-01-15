@@ -4,6 +4,7 @@ body {
     font-family: "Oswald", serif;
     margin: 0px;
     font-size: 18px;
+    max-width: 1519px;
 }
 
 /* Header */
