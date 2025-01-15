@@ -1,14 +1,42 @@
-.navigation {
-    display: flex;
-    align-items: center;
-    flex: 1 1 auto;
-    width: 100%;
+body {
+    display: grid;
 }
 
-.navigation a {
-    display: block;
-    color: #eee;
-    padding: 0.75rem;
+.header-bar h1 {
+    color: white;
+}
+
+.header-bar div {
+    background-color: #333333;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:link {
+    color: white;
     text-decoration: none;
+}
+
+.internal-body {
+    display: grid;
+}
+
+main {
+    background-color: #cccccc;
+}
+
+aside {
+    background-color: white;
+}
+
+footer {
+    background-color: #333333;
     text-align: center;
 }
