@@ -21,11 +21,16 @@ header h1 {
     padding: 20px;
 }
 
+#menu-icon {
+    display: block;
+}
+
 /*Navigation Bar*/
 nav {
     display: flex;
     padding: 20px;
     font-size: 21px;
+    display: none;
 }
 
 nav a:link {
@@ -34,6 +39,11 @@ nav a:link {
 
 nav a:visited {
     color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 h2 {
