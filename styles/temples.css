@@ -62,3 +62,7 @@ footer {
 #grid-home {
     display: grid;
 }
+
+img {
+    width: 300px;
+}
