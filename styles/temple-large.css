@@ -2,4 +2,15 @@
     #menu-icon {
         display: none;
     }
+
+    nav {
+        display: flex;
+        padding: 20px;
+        font-size: 21px;
+        display: block;
+    }
+
+    #grid-home {
+        display: grid;
+    }
 }
