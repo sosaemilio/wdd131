@@ -3,11 +3,13 @@
         display: none;
     }
 
+    header {
+        justify-content: space-between;
+    }
+
     nav {
-        display: flex;
-        padding: 20px;
-        font-size: 21px;
         display: block;
+
     }
 
     #grid-home {
