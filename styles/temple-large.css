@@ -12,7 +12,15 @@
 
     }
 
-    #grid-home {
+    .grid-home {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
