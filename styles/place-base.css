@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+p {
+    margin: 2px;
+}
+
 body {
     font-family: "Oswald", serif;
     margin: 0px;
     font-size: 18px;
     max-width: 1519px;
+}
+
+img {
+    width: 100%;
 }
 
 /*Navigation Bar*/
@@ -13,66 +21,23 @@ header {
 }
 
 header h1 {
-    background-color: #fca311;
+    background-color: #FCE300;
     margin: 0;
     padding: 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #14213d;
-    font-size: 21px;
-}
-
-nav a:link {
-    color: #ffffff;
-}
-
-nav a:visited {
-    color: #ffffff;
-}
-
-nav a:hover {
-    color: #fca311;
-}
-
-/*Internal Cards Design*/
-.card {
-    border: 1px #e5e5e5 solid;
-    margin: 15px;
-}
-
-.card h2 {
-    margin: 0;
-    background-color: #fca311;
-    text-align: center;
-    padding: 10px;
-}
-
-.card div {
-    display: flex;
-    gap: 1rem;
-    padding: 10px;
-}
-
-.card h3 {
-    padding: 5px 10px;
+figure {
     margin: 0px;
-    text-align: center;
-    font-size: 24px;
 }
 
-/*Body Design*/
-.internal-body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+h2 {
+    margin: 8px;
 }
 
 /*Footer*/
 footer {
     text-align: center;
-    background-color: #14213d;
+    background-color: #EF3340;
     color: #ffffff;
     padding: 20px;
 }
