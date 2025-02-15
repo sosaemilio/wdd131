@@ -57,3 +57,14 @@ const temples = [
     },
     // Add more temple objects here...
 ];
+
+const mainBody = document.getElementById
+
+temples.forEach(temple => {
+    
+    `<div class="card">
+        <h3>${temple.templeName}</h3>
+        <p>Location: ${temple.location}</p>
+        <p>Dedicated: ${temple.dedicated}</p>
+    </div>`
+});
