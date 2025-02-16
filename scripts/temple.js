@@ -1,5 +1,5 @@
 const menuButton = document.getElementById("menu-icon");
-const navBar = document.querySelectorAll(".navBar");
+const navBar = document.querySelector(".navBar");
 // menuitems will be a Node List of the list items
 
 menuButton.addEventListener("click", (e) => {
