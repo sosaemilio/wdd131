@@ -7,7 +7,7 @@ menuButton.addEventListener("click", (e) => {
         navBar.style.display = 'flex';
         menuButton.src = "images/close-icon.svg";
     } else {
-        menuitems.forEach((item) => item.classList.toggle("menu-item"));
+        navBar.style.display = 'none';
         menuButton.src = "images/menu.svg"
     }
 });
