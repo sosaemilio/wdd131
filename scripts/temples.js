@@ -66,10 +66,18 @@ const temples = [
     {
         templeName: "Caracas Venezuela",
         location: "Caracas, Venezuela",
+        dedicated: "2017, May, 21",
+        area: 44175,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/096-Caracas-Venezuela-Temple.jpg"
+    },
+    {
+        templeName: "Paris France",
+        location: "Paris, France",
         dedicated: "2000, August, 20",
         area: 15332,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/096-Caracas-Venezuela-Temple.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
     }
     // Add more temple objects here...
 ];

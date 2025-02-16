@@ -75,3 +75,7 @@ img {
 .card img {
     box-shadow: 3px 3px 10px #ccc;
 }
+
+#menu-icon {
+    width: 35px;
+}
