@@ -66,5 +66,7 @@ temples.forEach(temple => {
         <h3>${temple.templeName}</h3>
         <p>Location: ${temple.location}</p>
         <p>Dedicated: ${temple.dedicated}</p>
+        <p>Size: ${temple.area}</p>
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     </div>`;
 });
