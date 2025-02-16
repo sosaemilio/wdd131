@@ -133,10 +133,54 @@ document.getElementById("small").addEventListener("click", (e) => {
     });
 });
 
-// Small template menu item
+// Home template menu item
 document.getElementById("home").addEventListener("click", (e) => {
     mainBody.innerHTML = "";
     temples.forEach(temple => {
+        mainBody.innerHTML +=
+            `<div class="card">
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area}</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        </div>`;
+    });
+});
+
+// Old template menu item
+document.getElementById("old").addEventListener("click", (e) => {
+    // Filter Temples
+    let filteredTemples = temples.filter((temple) => {
+        let templeDate = new Date(temple.dedicated);
+        return templeDate.getFullYear() < 1900;
+    });
+    mainBody.innerHTML = "";
+
+    // Add Temples
+    filteredTemples.forEach(temple => {
+        mainBody.innerHTML +=
+            `<div class="card">
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area}</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        </div>`;
+    });
+});
+
+// Old template menu item
+document.getElementById("new").addEventListener("click", (e) => {
+    // Filter Temples
+    let filteredTemples = temples.filter((temple) => {
+        let templeDate = new Date(temple.dedicated);
+        return templeDate.getFullYear() > 2000;
+    });
+    mainBody.innerHTML = "";
+
+    // Add Temples
+    filteredTemples.forEach(temple => {
         mainBody.innerHTML +=
             `<div class="card">
             <h3>${temple.templeName}</h3>
