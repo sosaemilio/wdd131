@@ -69,7 +69,7 @@ const temples = [
         dedicated: "2000, August, 20",
         area: 15332,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/096-Caracas-Venezuela-Temple.jpg"
     }
     // Add more temple objects here...
 ];
