@@ -66,3 +66,14 @@ footer {
 img {
     width: 300px;
 }
+
+.card {
+    background-color: #eeeeee;
+    padding: 10px;
+    text-align: center;
+    border: 1px grey solid;
+}
+
+.card img {
+    box-shadow: 3px 3px 10px #ccc;
+}
