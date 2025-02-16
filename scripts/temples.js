@@ -58,11 +58,12 @@ const temples = [
     // Add more temple objects here...
 ];
 
-const mainBody = document.getElementById
+const mainBody = document.getElementById('grid-home');
 
 temples.forEach(temple => {
-    
-    `<div class="card">
+
+    mainBody.appendChild =
+        `<div class="card">
         <h3>${temple.templeName}</h3>
         <p>Location: ${temple.location}</p>
         <p>Dedicated: ${temple.dedicated}</p>
