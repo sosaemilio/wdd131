@@ -83,7 +83,6 @@ const temples = [
 ];
 
 let mainBody = document.getElementById('grid-home');
-
 temples.forEach(temple => {
     mainBody.innerHTML +=
         `<div class="card">
@@ -93,4 +92,58 @@ temples.forEach(temple => {
         <p>Size: ${temple.area}</p>
         <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     </div>`;
+});
+
+// Large Template menu item
+document.getElementById("large").addEventListener("click", (e) => {
+    // Filter Temples
+    let filteredTemples = temples.filter((largeTemple) => largeTemple.area > 90000);
+
+    mainBody.innerHTML = "";
+
+    // Add Temples
+    filteredTemples.forEach(temple => {
+        mainBody.innerHTML +=
+            `<div class="card">
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area}</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        </div>`;
+    });
+});
+
+// Small template menu item
+document.getElementById("small").addEventListener("click", (e) => {
+    // Filter Temples
+    let filteredTemples = temples.filter((largeTemple) => largeTemple.area < 100000);
+    mainBody.innerHTML = "";
+
+    // Add Temples
+    filteredTemples.forEach(temple => {
+        mainBody.innerHTML +=
+            `<div class="card">
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area}</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        </div>`;
+    });
+});
+
+// Small template menu item
+document.getElementById("home").addEventListener("click", (e) => {
+    mainBody.innerHTML = "";
+    temples.forEach(temple => {
+        mainBody.innerHTML +=
+            `<div class="card">
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area}</p>
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        </div>`;
+    });
 });
