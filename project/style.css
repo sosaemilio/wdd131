@@ -9,5 +9,9 @@ h1 {
 }
 
 a {
-    color: #d19b41;
+    color: black;
+}
+
+img {
+    width: 100%;
 }
