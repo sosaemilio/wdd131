@@ -10,9 +10,18 @@
 
     nav {
         display: block;
-
     }
 
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu a {
+        margin: 0 10px;
+        color: #ffffff;
+        text-decoration: none;
+    }
     .grid-home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
