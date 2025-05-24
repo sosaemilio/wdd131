@@ -1,0 +1,107 @@
+body {
+    font-family: "Oswald", serif;
+    margin: 0px;
+    font-size: 18px;
+    max-width: 1519px;
+}
+
+/*Navigation Bar*/
+header {
+    text-align: center;
+}
+
+header h1 {
+    background-color: #fca311;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #14213d;
+    font-size: 21px;
+}
+
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/*Internal Cards Design*/
+.card {
+    border: 1px #e5e5e5 solid;
+    margin: 15px;
+}
+
+.card h2 {
+    margin: 0;
+    background-color: #fca311;
+    text-align: center;
+    padding: 10px;
+}
+
+.card div {
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.card h3 {
+    padding: 5px 10px;
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*Body Design*/
+.internal-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* 
+* PLaces Landing Page
+* places.html
+*/
+
+.place-hero-image {
+    margin: 0px
+}
+
+section {
+    text-align: center;
+}
+
+
+.place-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.data-label-text {
+    text-align: end;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.data-label-value {
+    text-align: start;
+    margin: 0px;
+    margin-left: 5px;
+}
