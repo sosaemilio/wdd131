@@ -1,0 +1,76 @@
+p {
+    margin: 2px;
+}
+
+body {
+    font-family: "Oswald", serif;
+    margin: 0px;
+    font-size: 18px;
+    max-width: 1519px;
+}
+
+img {
+    width: 100%;
+}
+
+/*Navigation Bar*/
+header {
+    text-align: center;
+}
+
+header h1 {
+    background-color: #FCE300;
+    margin: 0;
+    padding: 20px;
+}
+
+figure {
+    margin: 0px;
+}
+
+h2 {
+    margin: 8px;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    background-color: #EF3340;
+    color: white;
+    padding: 20px;
+}
+
+/* 
+* PLaces Landing Page
+* places.html
+*/
+
+.place-hero-image {
+    margin: 0px
+}
+
+section {
+    text-align: center;
+}
+
+
+.place-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.data-label-text {
+    text-align: end;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.data-label-value {
+    text-align: start;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+#icon {
+    width: 100px;
+}

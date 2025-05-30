@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Emilio Sosa</title>
+    <meta name="description" content="Venezuela landing page for BYUI">
+    <meta name="author" content="Emilio Sosa">
+    <link rel="stylesheet" href="styles/place-base.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Venezuela</h1>
+    </header>
+    <main>
+        <picture class="place-hero-image">
+            <source media="(min-width:500px)" srcset="images/guacamaya-large.webp">
+            <img src="images/guacamaya-small.webp" alt="yellow and blue parrot named Guacamaya">
+        </picture>
+
+        <!--Weather Section-->
+        <section class="country-card">
+            <h2>Data</h2>
+            <div class="place-content">
+                <p class="data-label-text">Area: </p>
+                <p class="data-label-value">916,445 sq km</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Population: </p>
+                <p class="data-label-value">28,840,800</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Capital: </p>
+                <p class="data-label-value">Caracas</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Languages: </p>
+                <p class="data-label-value">divish</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Currency: </p>
+                <p class="data-label-value">Venezuelan Bolivar</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Time Zone: </p>
+                <p class="data-label-value">UTC -4</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Calling Code: </p>
+                <p class="data-label-value">+58</p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Internet TLD: </p>
+                <p class="data-label-value">.ve</p>
+            </div>
+        </section>
+
+        <section class="weather-card">
+            <h2 id="weather-title">Weather</h2>
+            <figure>
+                <img src="images/weather-icon.svg" alt="Weather Icon" id="icon">
+            </figure>
+            <div class="place-content">
+                <p class="data-label-text">Temperature: </p>
+                <p class="data-label-value" id="temperature"></p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Conditions: </p>
+                <p class="data-label-value" id="conditions"></p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Wind: </p>
+                <p class="data-label-value" id="wind"></p>
+            </div>
+            <div class="place-content">
+                <p class="data-label-text">Wind Chill: </p>
+                <p class="data-label-value" id="wind-chill"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright">
+            <span id="currentyear"></span> Emilio Sosa - Spain
+        </p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+<!--Colors from https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff-->
+
+</html>
