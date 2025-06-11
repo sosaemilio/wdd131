@@ -106,6 +106,7 @@ temples.forEach((temple) => {
     const templeImage = document.createElement("img");
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} image`;
+    templeImage.loading = "lazy";
 
     const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
@@ -147,6 +148,7 @@ document.getElementById("old").addEventListener("click", () => {
     const templeImage = document.createElement("img");
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} image`;
+    templeImage.loading = "lazy";
 
     const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
@@ -185,6 +187,7 @@ document.getElementById("new").addEventListener("click", () => {
     const templeImage = document.createElement("img");
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} image`;
+    templeImage.loading = "lazy";
 
     const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
@@ -220,6 +223,7 @@ document.getElementById("large").addEventListener("click", () => {
     const templeImage = document.createElement("img");
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} image`;
+    templeImage.loading = "lazy";
 
     const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
@@ -255,6 +259,7 @@ document.getElementById("small").addEventListener("click", () => {
     const templeImage = document.createElement("img");
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} image`;
+    templeImage.loading = "lazy";
 
     const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
@@ -289,6 +294,7 @@ document.getElementById("home").addEventListener("click", () => {
     const templeImage = document.createElement("img");
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} image`;
+    templeImage.loading = "lazy";
 
     const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
