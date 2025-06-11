@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review - WDD 131 - Emilio Sosa</title>
+        <meta name="description"
+            content="W05 Assignment: Product Review Form for WDD 131 - Dynamic Web Fundamentals from Emilio Ernesto Sosa Carrillo for BYU-Idaho">
+        <meta name="author" content="Emilio Sosa">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main class="internal-body">
+            <form action="get" class="product-review-form">
+                <label for="productName">Product Name:</label>
+                
+                <select name="productName" id="productName" required>
+                    <option value="" disabled selected>Choose a product</option>
+                    <option value="Product1">Product 1</option>
+                    <option value="Product2">Product 2</option>
+                    <option value="Product3">Product 3</option>
+                    <option value="Product4">Product 4</option>
+                </select>
+                
+                <fieldset class="rating-fieldset">
+                    <legend>Overall Rating:</legend>
+                    <div class="rating">
+                        <label for="5-stars">⭐</label>
+                        <input type="radio" name="productRating" id="1-start" required>
+                    </div>
+                    
+                    <div class="rating">
+                        <label for="2-stars">⭐⭐</label>
+                        <input type="radio" name="productRating" id="2-stars" required> 
+                    </div>
+                    <div class="rating">
+                        <label for="3-stars">⭐⭐⭐</label>
+                        <input type="radio" name="productRating" id="3-stars" required>
+                    </div>
+                    <div class="rating">
+                        <label for="4-stars">⭐⭐⭐⭐</label>
+                        <input type="radio" name="productRating" id="4-stars" required>
+                    </div>
+                    <div class="rating">
+                        <label for="5-stars">⭐⭐⭐⭐⭐</label>
+                        <input type="radio" name="productRating" id="5-stars" required>
+                    </div>
+                </fieldset>
+
+
+                <label for="dateOfInstallation">Date of Installation:</label>
+                <input type="date" name="dateOfInstallation" id="dateOfInstallation" required>
+
+                <fieldset>
+                    <legend>Which features did you find useful in the product? (Check All that apply)</legend>
+                    <div>
+                        <input type="checkbox" name="features" id="durability" value="durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="easeOfUse" value="easeOfUse">
+                        <label for="easeOfUse">Ease of Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="performance" value="performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="design" value="design">
+                        <label for="design">Design</label>
+                    </div>
+                </fieldset>
+                
+                <label for="writtenReview">Written Review: (Optional)</label>
+                <textarea name="writtenReview" id="writtenReview" rows="5"></textarea>
+
+                <label for="name">Your Name: (optional)</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </form>
+        </main>
+        <footer>
+            <p id="copyright"><span id="currentyear"></span> Emilio Sosa - Spain</p>
+            <p id="lastModified">Last Modified: </p>
+        </footer>
+        <script src="scripts/getdates.js" defer></script>
+    </body>
+</html>
