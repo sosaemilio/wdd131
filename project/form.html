@@ -18,17 +18,30 @@
 
 <body>
     <header>
-        <img src="cathedral-leon-high-resolution-logo.png" alt="Temple Album Logo">
+        <a href="/project/index.html">
+            <img src="cathedral-leon-high-resolution-logo.png" alt="Temple Album Logo">
+        </a>
         <img src="/images/menu.svg" alt="menu icon" id="menu-icon">
         <nav class="menu">
-            <a href="#" class="menu-item">Home</a>
-            <a href="#" class="menu-item">Old</a>
-            <a href="#" class="menu-item">New</a>
-            <a href="#" class="menu-item">Large</a>
-            <a href="#" class="menu-item">Small</a>
+            <a href="#" class="menu-item">Museum</a>
+            <a href="/project/form.html" class="menu-item">Form</a>
         </nav>
     </header>
     <main>
+        <h1></h1>
+        <form method="GET" action="confirmation.html" class="contact-form">
+    
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="request">Written Review:</label>
+            <textarea name="request" id="request" rows="5" required></textarea>
+
+            <input type="submit" value="Submit Request" />
+        </form>
     </main>
 
     <footer>
@@ -38,6 +51,7 @@
     </footer>
     <script src="/scripts/getdates.js" defer></script>
     <script src="/scripts/menu.js" defer></script>
+    <script src="/scripts/church-form.js" defer></script>
 </body>
 
 </html>

@@ -46,7 +46,7 @@ nav a:visited {
 
 nav a:hover {
     text-decoration: underline;
-    color: black;
+    color: #ffffff;
 }
 
 footer {
@@ -54,4 +54,39 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 20px;
+}
+
+
+/*FORM PAGE */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 500px;
+  padding: 10px;
+}
+
+form {
+  background-color: #d5cdd5;
+  margin: 1rem auto;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+/* Basic design for form inputs*/
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="date"],
+select, 
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
