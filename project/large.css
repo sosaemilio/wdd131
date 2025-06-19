@@ -27,4 +27,13 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    .button {
+        width: 10%;
+    }
+
+    main :first-child {
+       display: flex;
+       flex-direction: row;
+    }
 }
