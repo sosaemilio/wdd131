@@ -23,6 +23,11 @@ header img {
     width: 48px;
 }
 
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
 /*Navigation Bar*/
 nav {
     display: flex;
@@ -56,13 +61,23 @@ footer {
     padding: 20px;
 }
 
+.hero-image {
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
 
 /*FORM PAGE */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 500px;
   padding: 10px;
 }
 
@@ -74,6 +89,18 @@ form {
 main {
   padding: 2rem 1rem;
 }
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-text {
+    padding: 1rem;
+}
+
 
 /* Basic design for form inputs*/
 input[type="text"],
@@ -89,4 +116,9 @@ textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
