@@ -24,7 +24,7 @@
     }
 
     main {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -32,8 +32,25 @@
         width: 10%;
     }
 
-    main :first-child {
+    .cathedral-info {
        display: flex;
-       flex-direction: row;
+    }
+
+    .cathedral-info > div {
+        margin: 20px;
+    }
+
+    .hero-image {
+        height: 450px; 
+        object-fit: cover; 
+        object-position: 100% 0;
+    }
+    .hero-text {    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
     }
 }
